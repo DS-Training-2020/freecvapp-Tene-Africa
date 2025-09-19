@@ -1,0 +1,1 @@
+Python, Java, C++, JavaScript, SQL, Git, Docker, Kubernetes, REST API, Agile, Cloud, AWS, Azure, Google Cloud, Linux, HTML, CSS, React, Node.js, CI/CD, DevOps, Microservices, System Design, Testing, Debugging, API Integration, Problem Solving

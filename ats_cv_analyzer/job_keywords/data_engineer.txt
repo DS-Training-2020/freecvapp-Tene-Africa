@@ -1,0 +1,1 @@
+Python, SQL, ETL, Data Pipelines, Big Data, Hadoop, Spark, Kafka, Airflow, Cloud, AWS, Azure, Google Cloud, Snowflake, Redshift, Databricks, Data Warehousing, Data Lakes, SQL Optimization, NoSQL, MongoDB, Cassandra, Scala, Java, Docker, Kubernetes

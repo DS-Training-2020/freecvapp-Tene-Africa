@@ -1,0 +1,1 @@
+CI/CD, Git, Jenkins, Docker, Kubernetes, Terraform, Ansible, AWS, Azure, Google Cloud, Linux, Bash, Python, Monitoring, Prometheus, Grafana, CloudFormation, Security, Networking, Scripting, Automation, Infrastructure as Code, Configuration Management

@@ -1,0 +1,1 @@
+Python, R, SQL, Machine Learning, Deep Learning, Statistics, Data Analysis, Data Visualization, Pandas, NumPy, TensorFlow, PyTorch, Scikit-learn, Natural Language Processing, Big Data, Hadoop, Spark, Data Mining, Cloud, AWS, Azure, Google Cloud, ETL, Tableau, Power BI, Data Cleaning, Predictive Modeling, Jupyter
