@@ -7,4 +7,4 @@ supabase
 streamlit==1.39.0
 pillow==10.4.0
 plotly
-
+spacy
