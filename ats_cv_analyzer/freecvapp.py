@@ -493,4 +493,4 @@ if uploaded_file:
             st.download_button("📥 Download Full PDF Report", f, file_name=os.path.basename(pdf_report))
 else:
     st.info("Please upload a CV to begin analysis.")
-    TRADEMARK_INFO
+    st.info(TRADEMARK_INFO)
