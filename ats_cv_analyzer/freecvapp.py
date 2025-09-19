@@ -43,16 +43,13 @@ def render_footer():
         </style>
 
         <div class="footer">
-            
+            <h4>{TRADEMARK_INFO['brand_name']}</h4>
+            <p>
         """,
         unsafe_allow_html=True,
     )
 
-    for category, classes in TRADEMARK_INFO["classes"].items():
-        st.markdown(
-            f"<b>{category}</b>: {', '.join(classes)}<br>",
-            unsafe_allow_html=True
-        )
+   
 
     st.markdown(
         f"""
