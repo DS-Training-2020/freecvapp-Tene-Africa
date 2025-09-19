@@ -339,13 +339,8 @@ def card(title, items, color):
 import streamlit as st
 from trademark_config import TRADEMARK_INFO
 
-st.markdown(f"## 🌍 {TRADEMARK_INFO['brand_name']}")
 
-st.markdown("### Trademark Classes")
-for category, classes in TRADEMARK_INFO["classes"].items():
-    st.markdown(f"**{category}**: {', '.join(classes)}")
 
-st.info(TRADEMARK_INFO["disclaimer"])
 
 # ------------------ Streamlit App ------------------
 st.set_page_config(page_title="ATS CV Analyzer & Rewriter", layout="wide")
@@ -434,6 +429,14 @@ with st.expander("ℹ️ About this App"):
     ---
     ⚡ Developed by *Tene Africa* to help job seekers stand out in a competitive market.
     """)
+
+
+st.markdown(f"## 🌍 {TRADEMARK_INFO['brand_name']}")
+
+st.markdown("### Trademark Classes")
+for category, classes in TRADEMARK_INFO["classes"].items():
+    st.markdown(f"**{category}**: {', '.join(classes)}")
+
 
 
 if uploaded_file:
