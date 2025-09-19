@@ -20,6 +20,50 @@ nlp = spacy.load("en_core_web_sm")
 # ------------------ PDF Class ------------------
 from trademark_config import TRADEMARK_INFO
 
+def render_footer():
+    st.markdown(
+        f"""
+        <style>
+        .footer {{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            font-size: 13px;
+            color: gray;
+            border-top: 1px solid #ddd;
+        }}
+        .footer h4 {{
+            margin: 5px 0;
+            color: #333;
+        }}
+        </style>
+
+        <div class="footer">
+            <h4>{TRADEMARK_INFO['brand_name']}</h4>
+            <p>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    for category, classes in TRADEMARK_INFO["classes"].items():
+        st.markdown(
+            f"<b>{category}</b>: {', '.join(classes)}<br>",
+            unsafe_allow_html=True
+        )
+
+    st.markdown(
+        f"""
+            </p>
+            <p style="font-size:11px;">⚖️ {TRADEMARK_INFO['disclaimer']}</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 class PDF(FPDF):
     def footer(self):
         self.set_y(-20)
@@ -431,14 +475,7 @@ with st.expander("ℹ️ About this App"):
     """)
 
 
-st.markdown(f"## 🌍 {TRADEMARK_INFO['brand_name']}")
-
-st.markdown("### Trademark Classes")
-for category, classes in TRADEMARK_INFO["classes"].items():
-    st.markdown(f"**{category}**: {', '.join(classes)}")
-
-
-
+render_footer()
 if uploaded_file:
     text = extract_text(uploaded_file)
     analysis = analyze_cv(text, job_keywords=job_keywords)
