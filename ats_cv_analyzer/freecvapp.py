@@ -43,8 +43,7 @@ def render_footer():
         </style>
 
         <div class="footer">
-            <h4>{TRADEMARK_INFO['brand_name']}</h4>
-            <p>
+            
         """,
         unsafe_allow_html=True,
     )
