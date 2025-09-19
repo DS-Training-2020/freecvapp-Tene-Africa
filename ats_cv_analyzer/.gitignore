@@ -53,3 +53,5 @@ Thumbs.db
 
 Data
 data/
+# Streamlit
+.streamlit/secrets.toml
