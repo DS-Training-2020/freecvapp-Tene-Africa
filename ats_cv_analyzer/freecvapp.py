@@ -336,6 +336,17 @@ def card(title, items, color):
     else:
         st.info("None found")
 
+import streamlit as st
+from trademark_config import TRADEMARK_INFO
+
+st.markdown(f"## 🌍 {TRADEMARK_INFO['brand_name']}")
+
+st.markdown("### Trademark Classes")
+for category, classes in TRADEMARK_INFO["classes"].items():
+    st.markdown(f"**{category}**: {', '.join(classes)}")
+
+st.info(TRADEMARK_INFO["disclaimer"])
+
 # ------------------ Streamlit App ------------------
 st.set_page_config(page_title="ATS CV Analyzer & Rewriter", layout="wide")
 st.sidebar.image("https://dummyimage.com/200x60/000/fff&text=Tene+Africa", use_column_width=True)
@@ -493,4 +504,5 @@ if uploaded_file:
             st.download_button("📥 Download Full PDF Report", f, file_name=os.path.basename(pdf_report))
 else:
     st.info("Please upload a CV to begin analysis.")
-    st.info(TRADEMARK_INFO)
+    
+
